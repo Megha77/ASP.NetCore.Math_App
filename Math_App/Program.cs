@@ -6,9 +6,7 @@ namespace MathApp
         {
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
-
-           
-
+            
             app.Run(async (HttpContext context) => {
 
                 if (context.Request.Method == "GET" && context.Request.Path == "/")
@@ -89,7 +87,7 @@ namespace MathApp
                     {
                         if (context.Response.StatusCode == 200)
                             context.Response.StatusCode = 400;
-                        await context.Response.WriteAsync("Invalid operaton.");
+                        await context.Response.WriteAsync("Invalid operaton");
                     }
                 }
 
