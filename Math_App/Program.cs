@@ -173,7 +173,6 @@ namespace MathApp
                         if (context.Response.StatusCode == 200)
                             context.Response.StatusCode = 400;
                         await context.Response.WriteAsync("Invalid operaton");
-
                     }
                 }
 
