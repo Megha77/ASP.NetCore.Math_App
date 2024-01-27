@@ -90,7 +90,6 @@ namespace MathApp
                         await context.Response.WriteAsync("Invalid operation");
                     }
                 }
-
             });
             app.Run();
         }
